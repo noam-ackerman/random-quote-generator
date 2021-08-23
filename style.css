@@ -1,0 +1,55 @@
+body {
+  background-color: #ff9be4;
+}
+
+.container {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: red;
+  font-size: 45px;
+  font-family: "Rampart One", cursive;
+}
+
+.btn {
+  background: red;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.1);
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 100ms ease;
+  margin-bottom: 40px;
+}
+
+.btn:hover {
+  background-color: #ff35c5;
+}
+
+.result {
+  padding: 30px;
+  max-width: 50%;
+}
+.quote {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+}
+
+.name {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+}
