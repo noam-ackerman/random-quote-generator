@@ -37,6 +37,7 @@ h1 {
 .result {
   padding: 30px;
   max-width: 50%;
+  border-radius: 5px;
 }
 .quote {
   font-family: "Roboto", sans-serif;
