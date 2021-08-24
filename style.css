@@ -6,6 +6,7 @@ body {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  min-height: calc(100vh - 75px);
 }
 
 h1 {
@@ -58,8 +59,6 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   color: white;
-  position: absolute;
-  bottom: 12px;
   margin-left: 20px;
 }
 
