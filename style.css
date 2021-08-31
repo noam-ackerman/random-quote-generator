@@ -70,3 +70,24 @@ a {
 a:hover {
   color: #ff35c5;
 }
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 35px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .quote {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 7px;
+  }
+  .container {
+    min-height: calc(100vh - 65px);
+  }
+}
