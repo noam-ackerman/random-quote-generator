@@ -79,15 +79,15 @@ a:hover {
     font-size: 20px;
   }
   .quote {
-    font-size: 20px;
+    font-size: 23px;
   }
   .name {
     font-size: 15px;
   }
   footer {
-    font-size: 7px;
+    font-size: 8px;
   }
   .container {
-    min-height: calc(100vh - 65px);
+    min-height: calc(100vh - 66px);
   }
 }
