@@ -14,10 +14,12 @@ function displayQuotes(response) {
   let randomQuote = quotesArr[Math.floor(Math.random() * quotesArr.length)];
   quote.innerHTML = `"${randomQuote.quote}"`;
   source.innerHTML = randomQuote.name;
-  resultContainer.style.background = "#ff35c5";
 }
 
 function getQuotes() {
+  source.innerHTML = ``;
+  quote.innerHTML = `Loading...`;
+  resultContainer.style.background = "#ff35c5";
   let apiUrl = "https://my-qoutes-api.herokuapp.com/qoutes";
   axios.get(apiUrl).then(displayQuotes);
 }
