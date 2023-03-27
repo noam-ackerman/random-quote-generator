@@ -10,7 +10,8 @@ let resultContainer = document.querySelector(".result");
 btn.addEventListener("click", getQuotes);
 
 function displayQuotes(response) {
-  let quotesArr = response.data;
+  console.log(response.data.record.qoutes)
+  let quotesArr = response.data.record.qoutes;
   let randomQuote = quotesArr[Math.floor(Math.random() * quotesArr.length)];
   quote.innerHTML = `"${randomQuote.quote}"`;
   source.innerHTML = randomQuote.name;
