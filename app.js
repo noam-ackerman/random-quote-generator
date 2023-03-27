@@ -20,6 +20,6 @@ function getQuotes() {
   source.innerHTML = ``;
   quote.innerHTML = `Loading...`;
   resultContainer.style.background = "#ff35c5";
-  let apiUrl = "https://my-qoutes-api.herokuapp.com/qoutes";
+  let apiUrl = "https://api.jsonbin.io/v3/b/6421a703ebd26539d09e040b/latest";
   axios.get(apiUrl).then(displayQuotes);
 }
