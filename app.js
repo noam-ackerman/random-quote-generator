@@ -10,9 +10,8 @@ let resultContainer = document.querySelector(".result");
 btn.addEventListener("click", getQuotes);
 
 function displayQuotes(response) {
-  console.log(response.data.record.quotes)
-  let quotesArr = response.data.record.quotes;
-  let randomQuote = quotesArr[Math.floor(Math.random() * quotesArr.length)];
+  const quotes = response.record.quotes
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   quote.innerHTML = `"${randomQuote.quote}"`;
   source.innerHTML = randomQuote.name;
 }
@@ -22,5 +21,5 @@ function getQuotes() {
   quote.innerHTML = `Loading...`;
   resultContainer.style.background = "#ff35c5";
   let apiUrl = "https://api.jsonbin.io/v3/b/6421a703ebd26539d09e040b/latest";
-  axios.get(apiUrl).then(displayQuotes);
+  window.fetch(apiUrl).then(resp => resp.json()).then(response => displayQuotes(response))
 }
